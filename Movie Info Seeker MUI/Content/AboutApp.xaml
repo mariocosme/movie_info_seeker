@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Movie_Info_Seeker.Content.AboutApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <Image Height="100" Width="100" Source="/Resources/MIS_icon.png" HorizontalAlignment="Right"/>
+                <TextBlock Text="The application:" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Simple desktop application which let's the user search movies. Information will be stored locally. Movies can be searched by name input or by choosing folder. Folder and subfolders which contain video file formats will be imported." Height="63" TextWrapping="Wrap"/>
+                <StackPanel MinHeight="25" MinWidth="200">
+                    <TextBlock Text="Website support:" Style="{StaticResource Heading2}" />
+                </StackPanel>
+                <StackPanel MinWidth="200" MaxHeight="50" Orientation="Horizontal">
+                    <Image Height="100" Width="16" Source="/Resources/sourceforge_ico.PNG" VerticalAlignment="Top"/>
+                    <TextBlock Width="290">           
+                        <Hyperlink NavigateUri="https://sourceforge.net/projects/movieinfoseeker/" RequestNavigate="Hyperlink_RequestNavigateSForge">
+                    		SourceForge.net
+                        </Hyperlink>
+                    </TextBlock>
+                    <Image Height="100" Width="16" Source="/Resources/codeplex_ico.PNG" VerticalAlignment="Top"/>
+                    <TextBlock Width="290">           
+                        <Hyperlink NavigateUri="https://movieinfoseeker.codeplex.com/" RequestNavigate="Hyperlink_RequestNavigateCPlex">
+                            CodePlex.com
+                        </Hyperlink>
+                    </TextBlock>
+                    <Image Height="100" Width="16" Source="/Resources/github_ico.PNG" VerticalAlignment="Top"/>
+                    <TextBlock Width="290">           
+                        <Hyperlink NavigateUri="https://github.com/unkim/movie_info_seeker" RequestNavigate="Hyperlink_RequestNavigateGHub">
+                            GitHub.com
+                        </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

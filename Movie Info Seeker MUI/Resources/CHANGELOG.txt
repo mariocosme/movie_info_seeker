@@ -1,0 +1,26 @@
+===============================
+= Movie Info Seeker Changelog =
+===============================
+
+================================================
+Versions
+================================================
+1.0.0.0
+Alpha release //
+
+1.0.0.15
+Added about application content
+Added about me content
+Added send email capability
+Fixed search film button
+Added CHANGELOG.txt
+
+================================================
+About
+================================================
+http://sourceforge.net/projects/movieinfoseeker/
+
+================================================
+Contact
+================================================
+mailto: mariocosme@gmail.com
